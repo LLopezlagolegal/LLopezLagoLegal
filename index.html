@@ -3,52 +3,76 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Lucas López Lago | Habilitado para la Abogacía</title>
-    <link rel="stylesheet" href="css/styles.css">
+    <title>llopezlagolegal - Servicios jurídicos</title>
+    <style>
+        body { font-family: Arial, sans-serif; margin: 0; padding: 0; color: #333; line-height: 1.6; }
+        header { background-color: #00274d; color: #fff; padding: 20px 0; text-align: center; }
+        nav { background: #004080; color: white; padding: 10px 0; text-align: center; }
+        nav a { color: white; margin: 0 15px; text-decoration: none; }
+        nav a:hover { text-decoration: underline; }
+        .container { width: 80%; margin: 20px auto; }
+        .services, .about, .contact, .blog, .notice { margin-bottom: 40px; }
+        .services h2, .about h2, .contact h2, .blog h2, .notice h2 {
+            border-bottom: 2px solid #004080;
+            display: inline-block;
+            margin-bottom: 20px;
+        }
+        footer { background-color: #00274d; color: white; text-align: center; padding: 10px 0; position: fixed; bottom: 0; width: 100%; }
+        .btn { display: inline-block; background-color: #004080; color: white; padding: 10px 20px; text-decoration: none; border-radius: 5px; }
+        .btn:hover { background-color: #00274d; }
+    </style>
 </head>
 <body>
-    <header class="hero">
-        <div class="container">
-            <img src="img/logo.svg" alt="Logo" width="150">
-            <h1>Lucas López Lago</h1>
-            <p class="subtitle">Habilitado para el ejercicio de la abogacía</p>
-            <div class="certification-badge">
-                <img src="img/apto-icon.svg" alt="Icono certificación" width="30">
-                <span>Certificado APTO por el Ministerio de Justicia (verificación <a href="https://sede.mjusticia.gob.es" target="_blank">#AP:xXYP-FCSt-R$Kg-bmDe</a>)</span>
-            </div>
-        </div>
+    <header>
+        <h1>llopezlagolegal</h1>
+        <p>Perfil jurídico de Lucas López Lago – Apto para el ejercicio de la abogacía</p>
     </header>
 
     <nav>
-        <a href="index.html">Inicio</a>
-        <a href="experiencia.html">Experiencia</a>
-        <a href="formacion.html">Formación</a>
-        <a href="servicios/">Áreas de práctica</a>
-        <a href="#contacto">Contacto</a>
+        <a href="#about">Sobre mí</a>
+        <a href="#services">Servicios</a>
+        <a href="#blog">Entradas</a>
+        <a href="#contact">Contacto</a>
+        <a href="#notice">Aviso</a>
     </nav>
 
     <div class="container">
-        <section id="about">
+        <section id="about" class="about">
             <h2>Sobre mí</h2>
-            <img src="img/foto-perfil.jpg" alt="Foto Lucas López Lago" class="profile-img">
-            <p>Profesional jurídico habilitado para el ejercicio de la abogacía según certificación del Ministerio de Justicia (Orden PJC/878/2024). Especializado en derecho administrativo, laboral y propiedad intelectual.</p>
-            <p class="legal-note">* En proceso de colegiación. Este sitio no constituye publicidad profesional según el Art. 26 del Estatuto de la Abogacía.</p>
+            <p>Soy Lucas López Lago, graduado en Derecho por la Universidad Carlos III de Madrid y con formación en propiedad intelectual, derecho civil, administrativo y laboral. He obtenido la calificación de <strong>apto</strong> para el ejercicio de la abogacía conforme a la Orden PJC/878/2024.</p>
         </section>
 
-        <section id="contacto" class="contact-section">
+        <section id="services" class="services">
+            <h2>Servicios</h2>
+            <ul>
+                <li>Asesoramiento en derecho civil: contratos, familia y sucesiones.</li>
+                <li>Defensa en procedimientos laborales.</li>
+                <li>Gestión de reclamaciones administrativas.</li>
+                <li>Propiedad intelectual y nuevas tecnologías.</li>
+                <li>Consultoría en cumplimiento normativo (compliance).</li>
+            </ul>
+            <a href="#contact" class="btn">Solicitar una consulta</a>
+        </section>
+
+        <section id="blog" class="blog">
+            <h2>Entradas</h2>
+            <p>Próximamente compartiré publicaciones sobre novedades legales, análisis de casos relevantes y consejos prácticos en materia jurídica.</p>
+        </section>
+
+        <section id="contact" class="contact">
             <h2>Contacto</h2>
-            <p><strong>Email:</strong> <a href="mailto:lucaslopezlago3@gmail.com">lucaslopezlago3@gmail.com</a></p>
-            <p><strong>LinkedIn:</strong> <a href="https://www.linkedin.com/in/lucas-l%C3%B3pez-lago-9b3659232/" target="_blank">/lucas-lópez-lago</a></p>
+            <p><strong>Email:</strong> lucaslopezlago3@gmail.com</p>
+            <p><strong>LinkedIn:</strong> <a href="https://www.linkedin.com/in/lucas-l%C3%B3pez-lago-9b3659232/">Mi perfil profesional</a></p>
+        </section>
+
+        <section id="notice" class="notice">
+            <h2>Aviso legal</h2>
+            <p>Esta página tiene un carácter exclusivamente informativo. Aunque he obtenido la habilitación oficial para ejercer la abogacía, no estoy colegiado ni presto actualmente servicios profesionales como abogado. Por tanto, el contenido aquí expuesto no constituye una oferta de servicios jurídicos ni publicidad profesional conforme a la normativa vigente en España.</p>
         </section>
     </div>
 
     <footer>
-        <p>&copy; 2024 Lucas López Lago | 
-            <span class="legal-info">
-                Certificación verificable: <a href="documentos/APTO-abogado.pdf" target="_blank">Descargar PDF</a> | 
-                No colegiado (en proceso)
-            </span>
-        </p>
+        <p>&copy; 2024 llopezlagolegal – Página personal sin carácter profesional</p>
     </footer>
 </body>
 </html>
