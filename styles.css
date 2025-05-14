@@ -20,3 +20,6 @@ img {
     margin-bottom: 100px;
     padding-bottom: 30px;
 }
+.aviso-legal {
+    margin-bottom: 5rem; /* 1rem = 16px aprox */
+}
