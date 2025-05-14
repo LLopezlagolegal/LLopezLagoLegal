@@ -7,6 +7,25 @@
     border-radius: 5px;
     margin-top: 10px;
 }
+.photo-frame {
+    width: 200px; /* Ancho fijo */
+    height: auto; /* Altura flexible */
+    border-radius: 12px; /* Esquinas ligeramente redondeadas */
+    overflow: hidden; /* Contiene la imagen */
+    border: 4px solid #004080;
+    box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+}
+
+.profile-img {
+    width: 100%;
+    height: auto;
+    display: block;
+    transition: transform 0.3s ease; /* Efecto hover opcional */
+}
+
+.profile-img:hover {
+    transform: scale(1.03); /* Zoom sutil al pasar el mouse */
+}
 
 .btn:hover {
     background-color: #00274d;
@@ -15,11 +34,4 @@
 img {
     border: 3px solid #004080;
     border-radius: 8px;
-}
-.aviso-legal {
-    margin-bottom: 100px;
-    padding-bottom: 30px;
-}
-.aviso-legal {
-    margin-bottom: 5rem; /* 1rem = 16px aprox */
 }
