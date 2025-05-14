@@ -7,15 +7,38 @@
     border-radius: 5px;
     margin-top: 10px;
 }
-.photo-frame {
-    width: 200px; /* Ancho fijo */
-    height: auto; /* Altura flexible */
-    border-radius: 12px; /* Esquinas ligeramente redondeadas */
-    overflow: hidden; /* Contiene la imagen */
+
+.oval-frame {
+    width: 180px;      
+    height: 220px;      
     border: 4px solid #004080;
-    box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+    border-radius: 50% 50% 45% 45% / 60% 60% 40% 40%; 
+    padding: 6px;
+    background: white;
+    box-shadow: 0 4px 12px rgba(0,0,0,0.1);
+    overflow: hidden;   
+    display: flex;
+    align-items: center;
 }
 
+.oval-photo {
+    width: 100%;
+    height: auto;
+    object-fit: cover;  
+    object-position: center top; 
+    transition: transform 0.3s;
+}
+
+.oval-photo:hover {
+    transform: scale(1.05);
+}
+
+@media (max-width: 768px) {
+    .oval-frame {
+        width: 150px;
+        height: 180px;
+    }
+}
 .profile-img {
     width: 100%;
     height: auto;
