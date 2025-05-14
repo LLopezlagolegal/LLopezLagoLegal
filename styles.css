@@ -1,0 +1,18 @@
+.btn {
+    display: inline-block;
+    background-color: #004080;
+    color: white;
+    padding: 10px 20px;
+    text-decoration: none;
+    border-radius: 5px;
+    margin-top: 10px;
+}
+
+.btn:hover {
+    background-color: #00274d;
+}
+
+img {
+    border: 3px solid #004080;
+    border-radius: 8px;
+}
