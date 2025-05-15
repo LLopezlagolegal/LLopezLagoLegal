@@ -190,6 +190,18 @@
             box-shadow: 0 4px 8px rgba(0,0,0,0.1);
         }
         
+        .btn-outline {
+            background: transparent;
+            border: 2px solid var(--primary);
+            color: var(--primary);
+            margin-left: 15px;
+        }
+        
+        .btn-outline:hover {
+            background: var(--primary);
+            color: white;
+        }
+        
         .notice {
             background: var(--light);
             padding: 30px;
@@ -239,6 +251,11 @@
             nav a {
                 margin: 5px 0;
             }
+            
+            .btn-outline {
+                margin-left: 0;
+                margin-top: 10px;
+            }
         }
     </style>
 </head>
@@ -259,7 +276,7 @@
     <nav>
         <div class="nav-container">
             <a href="#about">Sobre mí</a>
-            <a href="#about">Mi currículum vitae</a>
+            <a href="curriculum-extendido.html">Mi currículum vitae</a>
             <a href="#services">Áreas de práctica</a>
             <a href="#tfm">Investigación académica</a>
             <a href="#contact">Contacto profesional</a>
@@ -268,102 +285,32 @@
     </nav>
 
     <div class="container">
-   <section id="about" class="about">
-    <h2>Sobre mí</h2>
-    
-    <div class="profile-summary">
-        <p>Jurista especializado con formación en Derecho, Propiedad Intelectual y Acceso a la Abogacía, con especial interés en el sector legal-tecnológico, mercados musicales/audiovisuales y compliance digital. Actualmente buscando oportunidades para aplicar mis conocimientos en entornos profesionales innovadores.</p>
-       <p>Tras graduarme en la Universidad Carlos III de Madrid, completé el Máster en Acceso a la Abogacía, obteniendo la calificación de <strong>apto</strong> conforme a la Orden PJC/878/2024 del Ministerio de Justicia.</p>
-
-    </div>
-
-    <div class="profile-details">
-        <div class="education-section">
-            <h3>Formación Académica</h3>
-            <ul class="academic-list">
-                <li>
-                    <strong>Máster en Acceso a la Abogacía</strong>
-                    <span>Universidad Autónoma de Madrid (2023-2025)</span>
-                    <em>Habilitación profesional obtenida</em>
-                </li>
-                <li>
-                    <strong>Máster en Propiedad Intelectual</strong>
-                    <span>Universidad Carlos III de Madrid (2022-2023)</span>
-                </li>
-                <li>
-                    <strong>Grado en Derecho</strong>
-                    <span>Universidad Carlos III de Madrid (2018-2022)</span>
-                    <em>Itinerario en Derecho Privado | 12 ECTS</em>
-                </li>
-                <li>
-                    <strong>Formación Complementaria</strong>
-                    <span>Análisis de datos · HTML básico · Traducción jurídica</span>
-                </li>
-            </ul>
-        </div>
-
-        <div class="experience-section">
-            <h3>Experiencia Profesional</h3>
-            <ul class="experience-list">
-                <li>
-                    <strong>Becario en Propiedad Intelectual</strong>
-                    <span>Multinacional del sector mediático (2022-2023)</span>
-                    <em>Revisión de contratos de derechos de autor · Análisis de tarifas de entidades de gestión · Elaboración de informes sobre PI y publicidad digital</em>
-                </li>
-                <li>
-                    <strong>Becario en Despacho Jurídico</strong>
-                    <span>Firmas especializadas (2021-2024)</span>
-                    <em>Asesoramiento legal · Redacción de demandas y recursos · Asistencia en procedimientos judiciales</em>
-                </li>
-            </ul>
-        </div>
-    </div>
-
-    <div class="skills-section">
-        <h3>Competencias Técnicas</h3>
-        <div class="skills-grid">
-            <div class="skill-category">
-                <h4>Tecnologías</h4>
+        <section id="about" class="about">
+            <h2>Sobre mí</h2>
+            
+            <div class="profile-summary">
+                <p>Jurista especializado con formación en Derecho, Propiedad Intelectual y Acceso a la Abogacía. Habilitado para el ejercicio profesional según Orden PJC/878/2024, con experiencia en derecho digital, propiedad intelectual y compliance tecnológico.</p>
+                
+                <p>Mi trayectoria combina formación académica sólida con experiencia práctica en despachos jurídicos y el sector mediático, destacando en:</p>
+                
                 <ul>
-                    <li>Análisis de datos (nivel intermedio)</li>
-                    <li>HTML y desarrollo web básico</li>
-                    <li>Microsoft Office/365 (avanzado)</li>
+                    <li>Análisis de contratos y derechos de autor</li>
+                    <li>Asesoramiento legal en entornos digitales</li>
+                    <li>Investigación jurídica aplicada</li>
+                    <li>Competencias técnicas (análisis de datos, HTML básico)</li>
                 </ul>
             </div>
-            <div class="skill-category">
-                <h4>Idiomas</h4>
-                <ul>
-                    <li>Español (nativo)</li>
-                    <li>Inglés (C1)</li>
-                    <li>Francés e Italiano (B2)</li>
-                </ul>
-            </div>
-            <div class="skill-category">
-                <h4>Habilidades Clave</h4>
-                <ul>
-                    <li>Compliance digital</li>
-                    <li>Investigación jurídica</li>
-                    <li>Redacción de informes técnicos</li>
-                </ul>
-            </div>
-        </div>
-    </div>
 
-    <div class="career-goals">
-        <p>Busco oportunidades profesionales que combinen el derecho con la tecnología, especialmente en áreas de:</p>
-        <ul>
-            <li>Propiedad intelectual en entornos digitales</li>
-            <li>Protección de datos y compliance tecnológico</li>
-            <li>Asesoramiento legal a startups y empresas tecnológicas</li>
-        </ul>
-    </div>
-
-    <a href="CV-Lucas-Lopez-Lago.pdf" download class="btn">
-        <i class="fas fa-download"></i> Descargar CV completo
-    </a>
-</section>  
-      
-         
+            <div class="btn-container">
+                <a href="curriculum-extendido.html" class="btn">
+                    Ver currículum completo
+                </a>
+                <a href="CV-Lucas-Lopez-Lago.pdf" download class="btn btn-outline">
+                    Descargar CV en PDF
+                </a>
+            </div>
+        </section>
+        
         <section id="services" class="services">
             <h2>Áreas de práctica</h2>
             <ul>
@@ -396,7 +343,6 @@
         <section id="notice" class="notice">
             <h2>Aviso legal</h2>
             <p>Esta página web tiene carácter meramente informativo y personal. Aunque poseo la habilitación oficial para el ejercicio de la abogacía, actualmente no ejerzo como abogado colegiado. El contenido aquí presentado no constituye asesoramiento jurídico ni publicidad profesional conforme al Estatuto General de la Abogacía Española.</p>
-
         </section>
     </div>
     
