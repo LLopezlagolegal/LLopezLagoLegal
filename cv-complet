@@ -1,0 +1,398 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CV Complet | Lucas López Lago</title>
+    <style>
+        :root {
+            --primary: #00274d;
+            --secondary: #004080;
+            --accent: #e8c050;
+            --light: #f8f9fa;
+            --dark: #1a1a1a;
+            --gray: #e0e0e0;
+        }
+        
+        body {
+            font-family: 'Georgia', 'Times New Roman', serif;
+            margin: 0;
+            padding: 0;
+            color: var(--dark);
+            line-height: 1.8;
+            background-color: #ffffff;
+        }
+        
+        header {
+            background: linear-gradient(135deg, var(--primary), var(--secondary));
+            color: white;
+            padding: 40px 0;
+            text-align: center;
+            position: relative;
+            box-shadow: 0 4px 12px rgba(0,0,0,0.1);
+        }
+        
+        .header-content {
+            max-width: 1200px;
+            margin: 0 auto;
+            padding: 0 20px;
+            position: relative;
+        }
+        
+        .language-switcher {
+            position: absolute;
+            top: 20px;
+            right: 20px;
+            display: flex;
+            gap: 10px;
+        }
+        
+        .flag-btn {
+            width: 30px;
+            height: 20px;
+            border: 1px solid rgba(255,255,255,0.3);
+            border-radius: 3px;
+            transition: all 0.3s ease;
+            cursor: pointer;
+            object-fit: cover;
+        }
+        
+        .flag-btn:hover {
+            transform: scale(1.1);
+            box-shadow: 0 2px 8px rgba(0,0,0,0.2);
+        }
+        
+        h1 {
+            font-size: 2.5rem;
+            margin: 0 0 10px 0;
+            font-weight: 600;
+            letter-spacing: 0.5px;
+        }
+        
+        .subtitle {
+            font-size: 1.1rem;
+            opacity: 0.9;
+            margin-bottom: 20px;
+        }
+        
+        .container {
+            max-width: 900px;
+            margin: 50px auto;
+            padding: 0 30px;
+        }
+        
+        section {
+            margin-bottom: 60px;
+        }
+        
+        h2 {
+            font-size: 1.8rem;
+            color: var(--primary);
+            margin-bottom: 25px;
+            padding-bottom: 10px;
+            border-bottom: 2px solid var(--accent);
+            display: inline-block;
+        }
+        
+        h3 {
+            font-size: 1.4rem;
+            color: var(--secondary);
+            margin: 30px 0 15px 0;
+        }
+        
+        ul {
+            padding-left: 0;
+        }
+        
+        li {
+            margin-bottom: 12px;
+            position: relative;
+            list-style-type: none;
+            padding-left: 25px;
+        }
+        
+        li:before {
+            content: "▹";
+            color: var(--accent);
+            position: absolute;
+            left: 0;
+            font-size: 1.2rem;
+        }
+        
+        .btn {
+            display: inline-block;
+            background: var(--primary);
+            color: white;
+            padding: 12px 28px;
+            text-decoration: none;
+            border-radius: 4px;
+            font-weight: 500;
+            letter-spacing: 0.5px;
+            transition: all 0.3s ease;
+            margin-top: 15px;
+            border: 2px solid transparent;
+        }
+        
+        .btn:hover {
+            background: white;
+            color: var(--primary);
+            border-color: var(--primary);
+            transform: translateY(-2px);
+            box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+        }
+        
+        .timeline-item {
+            margin-bottom: 40px;
+            padding-left: 30px;
+            border-left: 2px solid var(--accent);
+            position: relative;
+        }
+        
+        .timeline-item:before {
+            content: '';
+            position: absolute;
+            width: 12px;
+            height: 12px;
+            border-radius: 50%;
+            background: var(--primary);
+            left: -7px;
+            top: 5px;
+        }
+        
+        .timeline-date {
+            color: var(--secondary);
+            font-weight: 500;
+            margin: 5px 0;
+        }
+        
+        .timeline-company {
+            font-style: italic;
+            color: #555;
+            margin-bottom: 10px;
+        }
+        
+        .skills-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+            gap: 20px;
+            margin-top: 20px;
+        }
+        
+        .skill-category {
+            background: var(--light);
+            padding: 20px;
+            border-radius: 8px;
+        }
+        
+        footer {
+            background: var(--dark);
+            color: white;
+            text-align: center;
+            padding: 30px 0;
+            margin-top: 80px;
+        }
+        
+        @media (max-width: 768px) {
+            .skills-grid {
+                grid-template-columns: 1fr;
+            }
+            
+            h1 {
+                font-size: 2rem;
+            }
+            
+            .language-switcher {
+                position: static;
+                justify-content: center;
+                margin-bottom: 15px;
+            }
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <div class="header-content">
+            <div class="language-switcher">
+                <img src="https://flagcdn.com/w20/es.png" 
+                     srcset="https://flagcdn.com/w40/es.png 2x"
+                     alt="Español" 
+                     class="flag-btn"
+                     onclick="window.location.href='curriculum-extendido.html'">
+                <img src="https://flagcdn.com/w20/gb.png" 
+                     srcset="https://flagcdn.com/w40/gb.png 2x"
+                     alt="English" 
+                     class="flag-btn"
+                     onclick="window.location.href='cv-english.html'">
+            </div>
+            <h1>Lucas López Lago</h1>
+            <p class="subtitle">Curriculum Vitae Professionnel</p>
+            <a href="index.html" class="btn">← Retour à l'accueil</a>
+        </div>
+    </header>
+
+    <div class="container">
+        <section id="education">
+            <h2>Formation Académique</h2>
+            
+            <div class="timeline-item">
+                <h3>Master d'Accès à la Profession d'Avocat</h3>
+                <p class="timeline-date">2023 - 2025</p>
+                <p class="timeline-company">Université Autonome de Madrid</p>
+                <ul>
+                    <li>Habilité APT à l'exercice du droit (Ordre PJC/878/2024)</li>
+                    <li>Spécialisation en procédures judiciaires et conseil juridique</li>
+                    <li>Formation avancée en responsabilité professionnelle des avocats</li>
+                </ul>
+            </div>
+            
+            <div class="timeline-item">
+                <h3>Master en Propriété Intellectuelle</h3>
+                <p class="timeline-date">2022 - 2023</p>
+                <p class="timeline-company">Université Carlos III de Madrid</p>
+                 <ul>
+                    <li>Mémoire de Master : "Le régime de responsabilité des prestataires de services de partage de contenus en ligne selon la Directive 2019/790. L'exemple de TikTok."</li>
+                    <li>Spécialisation en droits d'auteur, marques et brevets</li>
+                </ul>
+            </div>
+            
+            <div class="timeline-item">
+                <h3>Licence en Droit</h3>
+                <p class="timeline-date">2018 - 2022</p>
+                <p class="timeline-company">Université Carlos III de Madrid</p>
+                <ul>
+                    <li>Parcours optionnel en Droit Privé (12 ECTS)</li>
+                    <li>Mémoire de Licence : "Protection juridique des personnes handicapées en Espagne"</li>
+                    <li>Mention honorable en Droit Civil et Administratif</li>
+                </ul>
+            </div>
+            
+            <h3>Formation Complémentaire</h3>
+            <ul>
+                <li><strong>Aspects juridiques et économiques de la production audiovisuelle</strong> - Corporation RTVE (2025)</li>
+                <li><strong>Introduction à la traduction juridique anglais-espagnol</strong> - UNED (2024-2025)</li>
+                <li><strong>Marque de l'Union Européenne (EUTM)</strong> - EUIPO (2022)</li>
+                <li><strong>Conception de Systèmes de Compliance</strong> - UC3M (2020)</li>
+            </ul>
+        </section>
+
+        <section id="experience">
+            <h2>Expérience Professionnelle</h2>
+            
+            <div class="timeline-item">
+                <h3>Stagiaire en Cabinet d'Avocats</h3>
+                <p class="timeline-date">Juillet 2024 - Décembre 2024</p>
+                <p class="timeline-company">Cabinet d'avocats, Madrid</p>
+                <ul>
+                    <li>Conseil juridique aux clients en droit administratif et du travail</li>
+                    <li>Rédaction de demandes, recours et documents juridiques</li>
+                    <li>Réclamations en voie administrative et contentieux-administratif</li>
+                    <li>Spécialisation en droit de la fonction publique, réclamation de compléments salariaux pour enseignants</li>
+                    <li>Contestation de critères de sélection et listes d'admis dans les concours</li>
+                </ul>
+            </div>
+            
+            <div class="timeline-item">
+                <h3>Stagiaire en Propriété Intellectuelle</h3>
+                <p class="timeline-date">Novembre 2022 - Mars 2023</p>
+                <p class="timeline-company">Groupe PRISA, Madrid</p>
+                <ul>
+                    <li>Revue de contrats de cession de droits d'auteur avec des maisons de disques</li>
+                    <li>Analyse des tarifs des sociétés de gestion européennes</li>
+                    <li>Préparation de rapports sur les nouveautés législatives en PI</li>
+                    <li>Gestion de la conformité en propriété intellectuelle</li>
+                    <li>Analyse des risques et responsabilité civile dans les droits numériques</li>
+                </ul>
+            </div>
+            
+            <div class="timeline-item">
+                <h3>Stage en Cabinet d'Avocats</h3>
+                <p class="timeline-date">Juillet 2021 - Août 2021</p>
+                <p class="timeline-company">Cabinet Amparo Noriega Fernández, Cadix</p>
+                <ul>
+                    <li>Conseil juridique aux clients en droit civil et pénal</li>
+                    <li>Rédaction de demandes et assistance dans les procédures judiciaires</li>
+                    <li>Service de permanence et assistance aux détenus</li>
+                    <li>Analyse de cas de responsabilité professionnelle</li>
+                </ul>
+            </div>
+            
+            <div class="timeline-item">
+                <h3>Membre du Personnel</h3>
+                <p class="timeline-date">Septembre 2020 - Mai 2021</p>
+                <p class="timeline-company">Association Universitaire Atenea UC3M</p>
+            </div>
+            
+            <div class="timeline-item">
+                <h3>Bénévole dans un Projet Éducatif</h3>
+                <p class="timeline-date">Octobre 2016 - Mai 2017</p>
+                <p class="timeline-company">Association Juniors</p>
+            </div>
+        </section>
+
+        <section id="skills">
+            <h2>Compétences</h2>
+            
+            <div class="skills-grid">
+                <div class="skill-category">
+                    <h3>Domaines Juridiques</h3>
+                    <ul>
+                        <li>Propriété Intellectuelle</li>
+                        <li>Droit Administratif</li>
+                        <li>Droit Civil</li>
+                        <li>Droit du Travail</li>
+                        <li>Conformité (Compliance)</li>
+                        <li>Responsabilité Professionnelle</li>
+                    </ul>
+                </div>
+                
+                <div class="skill-category">
+                    <h3>Technologies</h3>
+                    <ul>
+                        <li>Analyse de données (niveau intermédiaire)</li>
+                        <li>HTML/CSS basique</li>
+                        <li>Microsoft Office/365 (avancé)</li>
+                        <li>Google Workspace</li>
+                    </ul>
+                </div>
+                
+                <div class="skill-category">
+                    <h3>Langues</h3>
+                    <ul>
+                        <li>Espagnol (langue maternelle)</li>
+                        <li>Anglais (C1)</li>
+                        <li>Français (B2)</li>
+                        <li>Italien (B2)</li>
+                    </ul>
+                </div>
+            </div>
+        </section>
+
+        <section id="publications">
+            <h2>Recherche Académique</h2>
+            
+            <div class="timeline-item">
+                <h3>Mémoire de Master</h3>
+                <p>"Le régime de responsabilité des prestataires de services de partage de contenus en ligne selon la Directive 2019/790. L'exemple de TikTok."</p>
+                <a href="tfm-lucas-lopez-lago.pdf" download class="btn">Télécharger le mémoire complet</a>
+            </div>
+            
+            <div class="timeline-item">
+                <h3>Mémoire de Licence</h3>
+                <p>"Protection juridique des personnes handicapées en Espagne."</p>
+                <a href="tfg-lucas-lopez-lago.pdf" download class="btn">Télécharger le mémoire complet</a>
+            </div>
+        </section>
+
+        <a href="index.html" class="btn" style="margin: 30px auto 0; display: block; width: fit-content;">
+            ← Retour à l'accueil
+        </a>
+    </div>
+
+    <footer>
+        <div class="footer-content">
+            <p>Contact professionnel : lucaslopezlago3@gmail.com</p>
+            <p>&copy; 2025 Lucas López Lago - Tous droits réservés</p>
+        </div>
+    </footer>
+</body>
+</html>
