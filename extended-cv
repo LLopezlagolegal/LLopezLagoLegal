@@ -1,0 +1,371 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Complete CV | Lucas López Lago</title>
+    <style>
+        :root {
+            --primary: #00274d;
+            --secondary: #004080;
+            --accent: #e8c050;
+            --light: #f8f9fa;
+            --dark: #1a1a1a;
+            --gray: #e0e0e0;
+        }
+        
+        body {
+            font-family: 'Georgia', 'Times New Roman', serif;
+            margin: 0;
+            padding: 0;
+            color: var(--dark);
+            line-height: 1.8;
+            background-color: #ffffff;
+        }
+        
+        header {
+            background: linear-gradient(135deg, var(--primary), var(--secondary));
+            color: white;
+            padding: 40px 0;
+            text-align: center;
+            position: relative;
+            box-shadow: 0 4px 12px rgba(0,0,0,0.1);
+        }
+        
+        .header-content {
+            max-width: 1200px;
+            margin: 0 auto;
+            padding: 0 20px;
+        }
+        
+        .language-switcher {
+            position: absolute;
+            top: 20px;
+            right: 20px;
+        }
+        
+        h1 {
+            font-size: 2.5rem;
+            margin: 0 0 10px 0;
+            font-weight: 600;
+            letter-spacing: 0.5px;
+        }
+        
+        .subtitle {
+            font-size: 1.1rem;
+            opacity: 0.9;
+            margin-bottom: 20px;
+        }
+        
+        .container {
+            max-width: 900px;
+            margin: 50px auto;
+            padding: 0 30px;
+        }
+        
+        section {
+            margin-bottom: 60px;
+        }
+        
+        h2 {
+            font-size: 1.8rem;
+            color: var(--primary);
+            margin-bottom: 25px;
+            padding-bottom: 10px;
+            border-bottom: 2px solid var(--accent);
+            display: inline-block;
+        }
+        
+        h3 {
+            font-size: 1.4rem;
+            color: var(--secondary);
+            margin: 30px 0 15px 0;
+        }
+        
+        ul {
+            padding-left: 0;
+        }
+        
+        li {
+            margin-bottom: 12px;
+            position: relative;
+            list-style-type: none;
+            padding-left: 25px;
+        }
+        
+        li:before {
+            content: "▹";
+            color: var(--accent);
+            position: absolute;
+            left: 0;
+            font-size: 1.2rem;
+        }
+        
+        .btn {
+            display: inline-block;
+            background: var(--primary);
+            color: white;
+            padding: 12px 28px;
+            text-decoration: none;
+            border-radius: 4px;
+            font-weight: 500;
+            letter-spacing: 0.5px;
+            transition: all 0.3s ease;
+            margin-top: 15px;
+            border: 2px solid transparent;
+        }
+        
+        .btn:hover {
+            background: white;
+            color: var(--primary);
+            border-color: var(--primary);
+            transform: translateY(-2px);
+            box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+        }
+        
+        .timeline-item {
+            margin-bottom: 40px;
+            padding-left: 30px;
+            border-left: 2px solid var(--accent);
+            position: relative;
+        }
+        
+        .timeline-item:before {
+            content: '';
+            position: absolute;
+            width: 12px;
+            height: 12px;
+            border-radius: 50%;
+            background: var(--primary);
+            left: -7px;
+            top: 5px;
+        }
+        
+        .timeline-date {
+            color: var(--secondary);
+            font-weight: 500;
+            margin: 5px 0;
+        }
+        
+        .timeline-company {
+            font-style: italic;
+            color: #555;
+            margin-bottom: 10px;
+        }
+        
+        .skills-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+            gap: 20px;
+            margin-top: 20px;
+        }
+        
+        .skill-category {
+            background: var(--light);
+            padding: 20px;
+            border-radius: 8px;
+        }
+        
+        footer {
+            background: var(--dark);
+            color: white;
+            text-align: center;
+            padding: 30px 0;
+            margin-top: 80px;
+        }
+        
+        @media (max-width: 768px) {
+            .skills-grid {
+                grid-template-columns: 1fr;
+            }
+            
+            h1 {
+                font-size: 2rem;
+            }
+            
+            .language-switcher {
+                position: static;
+                margin-bottom: 15px;
+            }
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <div class="header-content">
+            <div class="language-switcher">
+                <a href="curriculum-extendido.html" class="btn" style="padding: 8px 16px; font-size: 0.9rem;">Spanish Version</a>
+            </div>
+            <h1>Lucas López Lago</h1>
+            <p class="subtitle">Professional Curriculum Vitae</p>
+            <a href="index.html" class="btn">← Back to Home</a>
+        </div>
+    </header>
+
+    <div class="container">
+        <section id="education">
+            <h2>Academic Background</h2>
+            
+            <div class="timeline-item">
+                <h3>Master's Degree in Access to the Legal Profession</h3>
+                <p class="timeline-date">2023 - 2025</p>
+                <p class="timeline-company">Autonomous University of Madrid</p>
+                <ul>
+                    <li>Qualified as FIT to practice law (Order PJC/878/2024)</li>
+                    <li>Specialization in judicial procedures and legal counseling</li>
+                    <li>Advanced training in professional liability for lawyers</li>
+                </ul>
+            </div>
+            
+            <div class="timeline-item">
+                <h3>Master's Degree in Intellectual Property</h3>
+                <p class="timeline-date">2022 - 2023</p>
+                <p class="timeline-company">Carlos III University of Madrid</p>
+                 <ul>
+                    <li>Master's Thesis: "The liability regime of online content-sharing service providers under Directive 2019/790. The TikTok case."</li>
+                    <li>Specialization in copyright, trademarks and patents</li>
+                </ul>
+            </div>
+            
+            <div class="timeline-item">
+                <h3>Bachelor's Degree in Law</h3>
+                <p class="timeline-date">2018 - 2022</p>
+                <p class="timeline-company">Carlos III University of Madrid</p>
+                <ul>
+                    <li>Elective track in Private Law (12 ECTS)</li>
+                    <li>Bachelor's Thesis: "Legal protection of people with disabilities in Spain"</li>
+                    <li>Honorable mention in Civil and Administrative Law</li>
+                </ul>
+            </div>
+            
+            <h3>Additional Training</h3>
+            <ul>
+                <li><strong>Legal and economic aspects of audiovisual production</strong> - RTVE Corporation (2025)</li>
+                <li><strong>Professional Liability for Lawyers</strong> - ICAM (2024)</li>
+                <li><strong>Introduction to legal translation English-Spanish</strong> - UNED (2024-2025)</li>
+                <li><strong>European Union Trade Mark (EUTM)</strong> - EUIPO (2022)</li>
+                <li><strong>Compliance Systems Design</strong> - UC3M (2020)</li>
+            </ul>
+        </section>
+
+        <section id="experience">
+            <h2>Professional Experience</h2>
+            
+            <div class="timeline-item">
+                <h3>Legal Intern at Law Firm</h3>
+                <p class="timeline-date">July 2024 - December 2024</p>
+                <p class="timeline-company">Law Firm, Madrid</p>
+                <ul>
+                    <li>Legal counseling to clients in administrative and labor law</li>
+                    <li>Drafting of lawsuits, appeals and legal documents</li>
+                    <li>Administrative and contentious-administrative claims</li>
+                    <li>Specialization in civil service law, salary supplement claims for teachers in public, subsidized and private education</li>
+                    <li>Challenging of selection criteria and admitted candidates lists in competitive examinations</li>
+                </ul>
+            </div>
+            
+            <div class="timeline-item">
+                <h3>Intellectual Property Intern</h3>
+                <p class="timeline-date">November 2022 - March 2023</p>
+                <p class="timeline-company">PRISA Group, Madrid</p>
+                <ul>
+                    <li>Review of copyright assignment contracts with record companies</li>
+                    <li>Analysis of tariffs from European collecting societies</li>
+                    <li>Preparation of reports on legislative developments in IP</li>
+                    <li>Intellectual property compliance management</li>
+                    <li>Risk analysis and civil liability in digital rights</li>
+                </ul>
+            </div>
+            
+            <div class="timeline-item">
+                <h3>Legal Internship</h3>
+                <p class="timeline-date">July 2021 - August 2021</p>
+                <p class="timeline-company">Amparo Noriega Fernández Law Office, Cádiz</p>
+                <ul>
+                    <li>Legal counseling to clients in civil and criminal law</li>
+                    <li>Drafting of lawsuits and assistance in judicial procedures</li>
+                    <li>Duty solicitor services and detained person assistance</li>
+                    <li>Analysis of professional liability cases</li>
+                </ul>
+            </div>
+            
+            <div class="timeline-item">
+                <h3>Staff Member</h3>
+                <p class="timeline-date">September 2020 - May 2021</p>
+                <p class="timeline-company">Atenea UC3M University Association</p>
+            </div>
+            
+            <div class="timeline-item">
+                <h3>Educational Project Volunteer</h3>
+                <p class="timeline-date">October 2016 - May 2017</p>
+                <p class="timeline-company">Juniors Association</p>
+            </div>
+        </section>
+
+        <section id="skills">
+            <h2>Skills</h2>
+            
+            <div class="skills-grid">
+                <div class="skill-category">
+                    <h3>Legal Areas</h3>
+                    <ul>
+                        <li>Intellectual Property</li>
+                        <li>Administrative Law</li>
+                        <li>Civil Law</li>
+                        <li>Labor Law</li>
+                        <li>Compliance</li>
+                        <li>Professional Liability</li>
+                    </ul>
+                </div>
+                
+                <div class="skill-category">
+                    <h3>Technologies</h3>
+                    <ul>
+                        <li>Data analysis (intermediate level)</li>
+                        <li>HTML/CSS basics</li>
+                        <li>Microsoft Office/365 (advanced)</li>
+                        <li>Google Workspace</li>
+                    </ul>
+                </div>
+                
+                <div class="skill-category">
+                    <h3>Languages</h3>
+                    <ul>
+                        <li>Spanish (native)</li>
+                        <li>English (C1)</li>
+                        <li>French (B2)</li>
+                        <li>Italian (B2)</li>
+                    </ul>
+                </div>
+            </div>
+        </section>
+
+        <section id="publications">
+            <h2>Academic Research</h2>
+            
+            <div class="timeline-item">
+                <h3>Master's Thesis</h3>
+                <p>"The liability regime of online content-sharing service providers under Directive 2019/790. The TikTok case."</p>
+                <a href="tfm-lucas-lopez-lago.pdf" download class="btn">Download Full Thesis</a>
+            </div>
+            
+            <div class="timeline-item">
+                <h3>Bachelor's Thesis</h3>
+                <p>"Legal protection of people with disabilities in Spain."</p>
+                <a href="tfg-lucas-lopez-lago.pdf" download class="btn">Download Full Thesis</a>
+            </div>
+        </section>
+
+        <a href="index.html" class="btn" style="margin: 30px auto 0; display: block; width: fit-content;">
+            ← Back to Home
+        </a>
+    </div>
+
+    <footer>
+        <div class="footer-content">
+            <p>Professional contact: lucaslopezlago3@gmail.com</p>
+            <p>&copy; 2025 Lucas López Lago - All rights reserved</p>
+        </div>
+    </footer>
+</body>
+</html>
