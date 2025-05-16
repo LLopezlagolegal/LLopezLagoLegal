@@ -140,7 +140,7 @@
             margin-bottom: 60px;
         }
         
-        h2 {
+                h2 {
             font-size: 1.8rem;
             color: var(--primary);
             margin-bottom: 25px;
@@ -227,24 +227,7 @@
         .language-switcher {
             position: absolute;
             top: 20px;
-            left: 20px;
-            display: flex;
-            gap: 10px;
-        }
-        
-        .flag-btn {
-            width: 30px;
-            height: 20px;
-            border: 1px solid rgba(255,255,255,0.3);
-            border-radius: 3px;
-            transition: all 0.3s ease;
-            cursor: pointer;
-            object-fit: cover;
-        }
-        
-        .flag-btn:hover {
-            transform: scale(1.1);
-            box-shadow: 0 2px 8px rgba(0,0,0,0.2);
+            right: 20px;
         }
         
         @media (max-width: 768px) {
@@ -282,25 +265,25 @@
             
             .language-switcher {
                 position: static;
-                justify-content: center;
-                margin-bottom: 15px;
+                margin-top: 15px;
             }
         }
     </style>
 </head>
 <body>
     <header>
-        <div class="language-switcher">
-            <img src="https://flagcdn.com/w20/es.png" 
-                 srcset="https://flagcdn.com/w40/es.png 2x"
-                 alt="Español" 
-                 class="flag-btn"
-                 onclick="window.location.href='index.html'">
-            <img src="https://flagcdn.com/w20/gb.png" 
-                 srcset="https://flagcdn.com/w40/gb.png 2x"
-                 alt="English" 
-                 class="flag-btn"
-                 onclick="window.location.href='english.html'">
+          <div class="header-content">
+            <div class="language-switcher">
+                <img src="https://flagcdn.com/w20/es.png" 
+                     srcset="https://flagcdn.com/w40/es.png 2x"
+                     alt="Spanish" 
+                     class="flag-btn"
+                     onclick="window.location.href='index.html'">
+                <img src="https://flagcdn.com/w20/fr.png" 
+                     srcset="https://flagcdn.com/w40/fr.png 2x"
+                     alt="Français" 
+                     class="flag-btn"
+                     onclick="window.location.href='french.html'">
         </div>
         <div class="header-content">
             <div class="profile-frame">
