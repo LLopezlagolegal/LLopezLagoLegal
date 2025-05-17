@@ -41,18 +41,33 @@
             gap: 50px;
             flex-wrap: wrap;
         }
-        
         .logo-container {
             position: absolute;
             top: 20px;
             left: 20px;
+            z-index: 10;
         }
         
         .logo {
-            height: 60px;
+            height: 80px; /* Increased from 60px to 80px */
             width: auto;
+            transition: transform 0.3s ease;
         }
         
+        .logo:hover {
+            transform: scale(1.05);
+        }
+    
+        /* For mobile responsiveness */
+        @media (max-width: 768px) {
+            .logo {
+                height: 60px;
+            }
+            .logo-container {
+                top: 15px;
+                left: 15px;
+            }
+        }
         .profile-frame {
             width: 220px;
             height: 280px;
