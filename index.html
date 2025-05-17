@@ -42,6 +42,17 @@
             flex-wrap: wrap;
         }
         
+        .logo-container {
+            position: absolute;
+            top: 20px;
+            left: 20px;
+        }
+        
+        .logo {
+            height: 60px;
+            width: auto;
+        }
+        
         .profile-frame {
             width: 220px;
             height: 280px;
@@ -269,12 +280,14 @@
                 margin-top: 15px;
             }
         }
-    </style>
+  </style>
 </head>
 <body>
     <header>
- <div class="header-content">
-             <div class="header-content">
+        <div class="logo-container">
+            <img src="10pezlagolegal.png" alt="Lucas López Lago Logo" class="logo">
+        </div>
+        <div class="header-content">
             <div class="language-switcher">
                 <img src="https://flagcdn.com/w20/gb.png" 
                      srcset="https://flagcdn.com/w40/gb.png 2x"
@@ -287,7 +300,6 @@
                      class="flag-btn"
                      onclick="window.location.href='french.html'">
             </div>
-        <div class="header-content">
             <div class="profile-frame">
                 <img src="foto-perfil.jpg" alt="Lucas López Lago - Abogado habilitado" class="profile-photo">
             </div>
