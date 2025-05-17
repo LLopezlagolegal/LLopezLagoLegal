@@ -41,6 +41,7 @@
             gap: 50px;
             flex-wrap: wrap;
         }
+        
         .logo-container {
             position: absolute;
             top: 20px;
@@ -49,19 +50,27 @@
         }
         
         .logo {
-            height: 80px; /* Increased from 60px to 80px */
-            width: auto;
-            transition: transform 0.3s ease;
+            width: 100px; /* Uniform size for perfect circle */
+            height: 100px;
+            border-radius: 50%; /* This makes it round */
+            object-fit: cover; /* Ensures image fills circle */
+            border: 3px solid white; /* Clean white border */
+            box-shadow: 0 4px 8px rgba(0,0,0,0.2); /* Subtle depth */
+            transition: all 0.3s ease;
+            background-color: white; /* Fallback if image has transparency */
         }
         
         .logo:hover {
-            transform: scale(1.05);
+            transform: scale(1.1);
+            box-shadow: 0 6px 12px rgba(0,0,0,0.3);
         }
-    
-        /* For mobile responsiveness */
+
+        /* Mobile responsiveness */
         @media (max-width: 768px) {
             .logo {
-                height: 60px;
+                width: 80px;
+                height: 80px;
+                border-width: 2px;
             }
             .logo-container {
                 top: 15px;
