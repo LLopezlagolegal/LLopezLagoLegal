@@ -42,27 +42,6 @@
             flex-wrap: wrap;
         }
         
-        .logo-container {
-            position: absolute;
-            top: 20px;
-            left: 20px;
-            z-index: 10;
-        }
-        
-        .logo {
-            width: 100px;
-            height: 100px;
-            border-radius: 50%;
-            object-fit: cover;
-            box-shadow: 0 2px 6px rgba(0,0,0,0.15); /* Subtle shadow only */
-            transition: all 0.3s ease;
-        }
-        
-        .logo:hover {
-            transform: scale(1.08);
-            box-shadow: 0 4px 10px rgba(0,0,0,0.2);
-        }
-
         /* Mobile responsiveness */
         @media (max-width: 768px) {
             .logo {
@@ -334,9 +313,7 @@
 </head>
 <body>
     <header>
-        <div class="logo-container">
-            <img src="llopezlagolegal.png" alt="Lucas López Lago Logo" class="logo">
-        </div>
+    
         <div class="header-content">
             <div class="language-switcher">
                 <img src="https://flagcdn.com/w20/gb.png" 
