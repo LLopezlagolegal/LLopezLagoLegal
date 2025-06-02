@@ -39,14 +39,47 @@
         }
         
         header {
-            background: linear-gradient(135deg, var(--primary), var(--secondary));
-            color: white;
-            padding: 40px 0;
-            text-align: center;
-            position: relative;
-            box-shadow: 0 4px 12px rgba(0,0,0,0.1);
-        }
-        
+         
+header {
+    background: linear-gradient(135deg, var(--primary), var(--secondary));
+    color: white;
+    padding: 40px 0;
+    text-align: center;
+    position: relative;
+    box-shadow: 0 4px 12px rgba(0,0,0,0.1);
+    /* Nuevas propiedades para los logos de fondo */
+    overflow: hidden; /* Oculta exceso de los logos posicionados */
+}
+
+/* Logos como elementos decorativos de fondo */
+header::before,
+header::after {
+    content: "";
+    position: absolute;
+    opacity: 0.1; /* Transparencia para no competir con el contenido */
+    background-size: contain;
+    background-repeat: no-repeat;
+    pointer-events: none; /* Permite hacer clic a través de ellos */
+    z-index: 0; /* Se colocan detrás del contenido */
+}
+
+/* Logo 1 (ej: favicon principal) */
+header::before {
+    background-image: url('web-app-manifest-192x192.png');
+    width: 150px;
+    height: 150px;
+    top: 20px;
+    left: 20px;
+}
+
+/* Logo 2 (ej: balanza de justicia) */
+header::after {
+    background-image: url('favicon_2.png');
+    width: 120px;
+    height: 120px;
+    bottom: 10px;
+    right: 30px;
+}
         .header-content {
             max-width: 1200px;
             margin: 0 auto;
