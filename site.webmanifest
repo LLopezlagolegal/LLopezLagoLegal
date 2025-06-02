@@ -1,5 +1,5 @@
 {
-  "name": "Lucas L. L. Legal",
+  "name": "Lucas LL Legal",
   "short_name": "LLL Legal",
   "icons": [
     {
@@ -15,7 +15,7 @@
       "purpose": "maskable"
     }
   ],
-  "theme_color": "#00274d",
+  "theme_color": "#003672",
   "background_color": "#004080",
   "display": "standalone"
 }
