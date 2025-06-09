@@ -5,21 +5,21 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Lucas López Lago | Perfil Jurídico Profesional</title>
-        <link rel="icon" type="image/png" href="/https://lucaslllegal.github.io/LucasLLLegal/favicon-96x96.png" sizes="96x96" />
-        <link rel="icon" type="image/svg+xml" href="/https://lucaslllegal.github.io/LucasLLLegal/favicon.svg" />
-        <link rel="shortcut icon" href="/https://lucaslllegal.github.io/LucasLLLegal/favicon.ico" />
-        <link rel="apple-touch-icon" sizes="180x180" href="/https://lucaslllegal.github.io/LucasLLLegal/apple-touch-icon.png" />
-        <meta name="apple-mobile-web-app-title" content="LLL Legal" />
-        <link rel="manifest" href="/https://lucaslllegal.github.io/LucasLLLegal/site.webmanifest" />
-            <!-- Favicon básico (compatible con la mayoría de navegadores) -->
-        <link rel="icon" href="favicon.ico" type="image/x-icon">
-        
-        <!-- Para mayor compatibilidad (PNG/SVG) -->
-        <link rel="icon" type="image/png" href="favicon.png">
-        <link rel="icon" type="image/svg+xml" href="favicon.svg">
-        
-        <!-- Para Apple (iPhone, iPad) -->
-        <link rel="apple-touch-icon" href="apple-touch-icon.png">
+    <link rel="icon" type="image/png" href="/https://lucaslllegal.github.io/LucasLLLegal/favicon-96x96.png" sizes="96x96" />
+    <link rel="icon" type="image/svg+xml" href="/https://lucaslllegal.github.io/LucasLLLegal/favicon.svg" />
+    <link rel="shortcut icon" href="/https://lucaslllegal.github.io/LucasLLLegal/favicon.ico" />
+    <link rel="apple-touch-icon" sizes="180x180" href="/https://lucaslllegal.github.io/LucasLLLegal/apple-touch-icon.png" />
+    <meta name="apple-mobile-web-app-title" content="LLL Legal" />
+    <link rel="manifest" href="/https://lucaslllegal.github.io/LucasLLLegal/site.webmanifest" />
+    <!-- Favicon básico (compatible con la mayoría de navegadores) -->
+    <link rel="icon" href="favicon.ico" type="image/x-icon">
+    
+    <!-- Para mayor compatibilidad (PNG/SVG) -->
+    <link rel="icon" type="image/png" href="favicon.png">
+    <link rel="icon" type="image/svg+xml" href="favicon.svg">
+    
+    <!-- Para Apple (iPhone, iPad) -->
+    <link rel="apple-touch-icon" href="apple-touch-icon.png">
     <style>
         :root {
             --primary: #00274d;
@@ -189,17 +189,21 @@
         }
         
         .btn {
-            display: inline-block;
+            display: inline-flex;
+            align-items: center;
+            justify-content: center;
             background: var(--primary);
             color: white;
-            padding: 12px 28px;
+            padding: 12px 24px;
             text-decoration: none;
             border-radius: 4px;
             font-weight: 500;
             letter-spacing: 0.5px;
             transition: all 0.3s ease;
-            margin-top: 15px;
             border: 2px solid transparent;
+            text-align: center;
+            min-width: 180px;
+            box-shadow: 0 2px 5px rgba(0,0,0,0.1);
         }
         
         .btn:hover {
@@ -207,41 +211,65 @@
             color: var(--primary);
             border-color: var(--primary);
             transform: translateY(-2px);
-            box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+            box-shadow: 0 4px 8px rgba(0,0,0,0.15);
         }
         
         .btn-outline {
             background: transparent;
             border: 2px solid var(--primary);
             color: var(--primary);
-            margin-left: 15px;
         }
         
         .btn-outline:hover {
             background: var(--primary);
             color: white;
         }
+        
         .btn-container {
-                display: flex;
-                flex-wrap: wrap;
-                gap: 10px;
-                margin-top: 20px;
-            }
-            
-            .btn i {
-                margin-right: 8px;
-            }
+            display: flex;
+            flex-wrap: wrap;
+            gap: 15px;
+            margin-top: 25px;
+        }
+        
+        .btn i {
+            margin-right: 10px;
+            font-size: 0.9em;
+        }
+        
         .btn.cv-pdf {
-            background-color: var(--secondary) !important; /* Azul medio (#004080) */
-            border-color: var(--secondary) !important;
-            color: white;
+            background-color: var(--secondary);
+            border-color: var(--secondary);
         }
         
         .btn.cv-pdf:hover {
-            background-color: #003366 !important; /* Un tono un poco más oscuro para hover */
-            border-color: #003366 !important;
+            background-color: #003366;
+            border-color: #003366;
+            color: white;
         }
-            
+        
+        .btn.linkedin {
+            background-color: #0077B5;
+            border-color: #0077B5;
+        }
+        
+        .btn.linkedin:hover {
+            background-color: #005582;
+            border-color: #005582;
+            color: white;
+        }
+        
+        .btn.email {
+            background-color: #8E2B23;
+            border-color: #8E2B23;
+        }
+        
+        .btn.email:hover {
+            background-color: #6D221B;
+            border-color: #6D221B;
+            color: white;
+        }
+        
         .notice {
             background: var(--light);
             padding: 30px;
@@ -327,9 +355,13 @@
                 margin: 5px 0;
             }
             
-            .btn-outline {
-                margin-left: 0;
-                margin-top: 10px;
+            .btn-container {
+                flex-direction: column;
+                gap: 10px;
+            }
+            
+            .btn {
+                width: 100%;
             }
             
             .language-switcher {
@@ -337,11 +369,10 @@
                 margin-top: 15px;
             }
         }
-  </style>
+    </style>
 </head>
 <body>
     <header>
-    
         <div class="header-content">
             <div class="language-switcher">
                 <img src="https://flagcdn.com/w20/gb.png" 
@@ -395,18 +426,17 @@
                 </ul>
             </div>
 
-          <div class="btn-container">
-            <a href="curriculum-extendido.html" class="btn">
-                <i class="fas fa-file-alt"></i> Ver currículum completo
-            </a>
-            <a href="CV.pdf" download class="btn-cv" style="background-color: var(--secondary); border-color: var(--secondary);">
-                <i class="fas fa-download"></i> Descargar CV
-            </a>
-            <a href="CV-harvard.pdf" download class="btn btn-outline">
-                <i class="fas fa-graduation-cap"></i> CV Formato Harvard
-            </a>
-        </div>
-            
+            <div class="btn-container">
+                <a href="curriculum-extendido.html" class="btn">
+                    <i class="fas fa-file-alt"></i> Ver currículum completo
+                </a>
+                <a href="CV.pdf" download class="btn cv-pdf">
+                    <i class="fas fa-download"></i> Descargar CV
+                </a>
+                <a href="CV-harvard.pdf" download class="btn btn-outline">
+                    <i class="fas fa-graduation-cap"></i> CV Formato Harvard
+                </a>
+            </div>
         </section>
         
         <section id="services" class="services">
@@ -419,57 +449,70 @@
                 <li><strong>Compliance</strong>.</li>
             </ul>
         </section>
-     <section id="copywriting" class="copywriting-section" style="margin: 60px 0; background: var(--light); padding: 30px; border-radius: 8px; box-shadow: 0 4px 12px rgba(0,0,0,0.05);">
-    <h2 style="color: var(--primary); font-size: 1.8rem; border-bottom: 2px solid var(--accent); display: inline-block; margin-bottom: 20px;">
-        <i class="fas fa-pen-fancy" style="margin-right: 10px; color: var(--accent);"></i>
-        Copywriting Jurídico
-    </h2>
-    
-    <p style="margin-bottom: 20px; font-size: 1.1rem;">Servicios profesionales de redacción legal adaptada a tus necesidades:</p>
-    
-    <ul style="list-style-type: none; padding-left: 0;">
-        <li style="margin-bottom: 15px; position: relative; padding-left: 25px;">
-            <i class="fas fa-check" style="position: absolute; left: 0; color: var(--accent);"></i>
-            Contratos y documentos legales claros y precisos.
-        </li>
-        <li style="margin-bottom: 15px; position: relative; padding-left: 25px;">
-            <i class="fas fa-check" style="position: absolute; left: 0; color: var(--accent);"></i>
-            Artículos y guías jurídicas para blogs o páginas web.
-        </li>
-        <li style="margin-bottom: 15px; position: relative; padding-left: 25px;">
-            <i class="fas fa-check" style="position: absolute; left: 0; color: var(--accent);"></i>
-            Adaptación de textos legales para público no especializado.
-        </li>
-    </ul>
-    
-    <a href="https://lucaslllegal.github.io/LucasLLCopywriting/" 
-       class="btn" 
-       style="background: var(--primary); color: white; margin-top: 20px; display: inline-block;">
-        <i class="fas fa-external-link-alt" style="margin-right: 8px;"></i>
-        Ver Servicios Completos
-    </a>
-</section>
+        
+        <section id="copywriting" class="copywriting-section" style="margin: 60px 0; background: var(--light); padding: 30px; border-radius: 8px; box-shadow: 0 4px 12px rgba(0,0,0,0.05);">
+            <h2 style="color: var(--primary); font-size: 1.8rem; border-bottom: 2px solid var(--accent); display: inline-block; margin-bottom: 20px;">
+                <i class="fas fa-pen-fancy" style="margin-right: 10px; color: var(--accent);"></i>
+                Copywriting Jurídico
+            </h2>
+            
+            <p style="margin-bottom: 20px; font-size: 1.1rem;">Servicios profesionales de redacción legal adaptada a tus necesidades:</p>
+            
+            <ul style="list-style-type: none; padding-left: 0;">
+                <li style="margin-bottom: 15px; position: relative; padding-left: 25px;">
+                    <i class="fas fa-check" style="position: absolute; left: 0; color: var(--accent);"></i>
+                    Contratos y documentos legales claros y precisos.
+                </li>
+                <li style="margin-bottom: 15px; position: relative; padding-left: 25px;">
+                    <i class="fas fa-check" style="position: absolute; left: 0; color: var(--accent);"></i>
+                    Artículos y guías jurídicas para blogs o páginas web.
+                </li>
+                <li style="margin-bottom: 15px; position: relative; padding-left: 25px;">
+                    <i class="fas fa-check" style="position: absolute; left: 0; color: var(--accent);"></i>
+                    Adaptación de textos legales para público no especializado.
+                </li>
+            </ul>
+            
+            <div class="btn-container">
+                <a href="https://lucaslllegal.github.io/LucasLLCopywriting/" class="btn">
+                    <i class="fas fa-external-link-alt"></i> Ver Servicios Completos
+                </a>
+            </div>
+        </section>
+        
         <section id="tfm" class="blog">
             <h2>Investigación académica</h2>
             <h3> "El régimen de responsabilidad de los prestadores de servicios para compartir contenidos en línea de la Directiva 2019/790. El ejemplo de TikTok." </h3>
             <p> Análisis crítico de la Directiva 2019/790 sobre derechos de autor en el mercado único digital, con estudio de caso aplicado a plataformas como TikTok.</p>
-            <a href="tfm-lucas-lopez-lago.pdf" download class="btn">Descargar TFM completo</a>
+            
+            <div class="btn-container">
+                <a href="tfm-lucas-lopez-lago.pdf" download class="btn">
+                    <i class="fas fa-file-pdf"></i> Descargar TFM completo
+                </a>
+            </div>
             
             <h3> "Protección legal de las personas con discapacidad en España." </h3>
             <p> Este trabajo examina críticamente el nuevo modelo social de discapacidad en España tras la reforma introducida por la <strong>Ley 8/2021, de 2 de junio</strong>, contrastándolo con los estándares establecidos en la <strong>Convención sobre los Derechos de las Personas con Discapacidad de 2006</strong>.</p>
-            <a href="tfg-lucas-lopez-lago.pdf" download class="btn">Descargar TFG completo</a>
+            
+            <div class="btn-container">
+                <a href="tfg-lucas-lopez-lago.pdf" download class="btn">
+                    <i class="fas fa-file-pdf"></i> Descargar TFG completo
+                </a>
+            </div>
         </section>
         
         <section id="contact" class="contact">
             <h2>Contacto profesional</h2>
             <p>Para consultas académicas o profesionales, puede contactarme a través de los siguientes medios:</p>
-           <div class="contact-buttons" style="display: flex; gap: 15px; margin-top: 20px; flex-wrap: wrap;">
-            <a href="mailto:lucaslopezlago3@gmail.com" class="btn" style="background-color: var(--primary);">
-                <i class="fas fa-envelope"></i> Email
-            </a>
-            <a href="https://www.linkedin.com/in/lucas-l%C3%B3pez-lago-9b3659232/" target="_blank" class="btn" style="background-color: #0077B5;">
-                <i class="fab fa-linkedin"></i> Conectar en LinkedIn
-            </a>
+            
+            <div class="btn-container">
+                <a href="mailto:lucaslopezlago3@gmail.com" class="btn email">
+                    <i class="fas fa-envelope"></i> Enviar Email
+                </a>
+                <a href="https://www.linkedin.com/in/lucas-l%C3%B3pez-lago-9b3659232/" target="_blank" class="btn linkedin">
+                    <i class="fab fa-linkedin-in"></i> Conectar en LinkedIn
+                </a>
+            </div>
         </section>
 
         <section id="notice" class="notice">
@@ -479,23 +522,17 @@
     </div>
     
     <footer>
-       
-    <div class="footer-content">
-        <p>&copy; 2025 Lucas López Lago | Todos los derechos reservados</p>
-        <p>Página web personal | Última actualización: mayo 2025</p>
-        
-    <div class="footer-logos" style="display: flex; justify-content: center; gap: 30px; margin-top: 20px;">
-
-    <img src="web-app-manifest-512x512.png" alt="Icono profesional" style="width: 100px; height: 100px;">
-
-    </div>
-
+        <div class="footer-content">
+            <p>&copy; 2025 Lucas López Lago | Todos los derechos reservados</p>
+            <p>Página web personal | Última actualización: mayo 2025</p>
+            
+            <div class="footer-logos" style="display: flex; justify-content: center; gap: 30px; margin-top: 20px;">
+                <img src="web-app-manifest-512x512.png" alt="Icono profesional" style="width: 100px; height: 100px;">
+            </div>
+        </div>
     </footer>
 </body>
 </html>
-
-
-
 
 
 
