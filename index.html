@@ -3,23 +3,23 @@
 <head>
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
     <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
-    <title>Lucas López Lago | Perfil Jurídico Profesional</title>
-    <link rel="icon" type="image/png" href="/https://lucaslllegal.github.io/LucasLLLegal/favicon-96x96.png" sizes="96x96" />
-    <link rel="icon" type="image/svg+xml" href="/https://lucaslllegal.github.io/LucasLLLegal/favicon.svg" />
-    <link rel="shortcut icon" href="/https://lucaslllegal.github.io/LucasLLLegal/favicon.ico" />
-    <link rel="apple-touch-icon" sizes="180x180" href="/https://lucaslllegal.github.io/LucasLLLegal/apple-touch-icon.png" />
-    <meta name="apple-mobile-web-app-title" content="LLL Legal" />
-    <link rel="manifest" href="/https://lucaslllegal.github.io/LucasLLLegal/site.webmanifest" />
-    <!-- Favicon básico (compatible con la mayoría de navegadores) -->
-    <link rel="icon" href="favicon.ico" type="image/x-icon">
-    
-    <!-- Para mayor compatibilidad (PNG/SVG) -->
-    <link rel="icon" type="image/png" href="favicon.png">
-    <link rel="icon" type="image/svg+xml" href="favicon.svg">
-    
-    <!-- Para Apple (iPhone, iPad) -->
-    <link rel="apple-touch-icon" href="apple-touch-icon.png">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Lucas López Lago | Profesional Legal Profile</title>
+        <link rel="icon" type="image/png" href="/https://lucaslllegal.github.io/LucasLLLegal/favicon-96x96.png" sizes="96x96" />
+        <link rel="icon" type="image/svg+xml" href="/https://lucaslllegal.github.io/LucasLLLegal/favicon.svg" />
+        <link rel="shortcut icon" href="/https://lucaslllegal.github.io/LucasLLLegal/favicon.ico" />
+        <link rel="apple-touch-icon" sizes="180x180" href="/https://lucaslllegal.github.io/LucasLLLegal/apple-touch-icon.png" />
+        <meta name="apple-mobile-web-app-title" content="LLL Legal" />
+        <link rel="manifest" href="/https://lucaslllegal.github.io/LucasLLLegal/site.webmanifest" />
+            <!-- Favicon básico (compatible con la mayoría de navegadores) -->
+        <link rel="icon" href="favicon.ico" type="image/x-icon">
+        
+        <!-- Para mayor compatibilidad (PNG/SVG) -->
+        <link rel="icon" type="image/png" href="favicon.png">
+        <link rel="icon" type="image/svg+xml" href="favicon.svg">
+        
+        <!-- Para Apple (iPhone, iPad) -->
+        <link rel="apple-touch-icon" href="apple-touch-icon.png">
     <style>
         :root {
             --primary: #00274d;
@@ -189,21 +189,17 @@
         }
         
         .btn {
-            display: inline-flex;
-            align-items: center;
-            justify-content: center;
+            display: inline-block;
             background: var(--primary);
             color: white;
-            padding: 12px 24px;
+            padding: 12px 28px;
             text-decoration: none;
             border-radius: 4px;
             font-weight: 500;
             letter-spacing: 0.5px;
             transition: all 0.3s ease;
+            margin-top: 15px;
             border: 2px solid transparent;
-            text-align: center;
-            min-width: 180px;
-            box-shadow: 0 2px 5px rgba(0,0,0,0.1);
         }
         
         .btn:hover {
@@ -211,65 +207,31 @@
             color: var(--primary);
             border-color: var(--primary);
             transform: translateY(-2px);
-            box-shadow: 0 4px 8px rgba(0,0,0,0.15);
+            box-shadow: 0 4px 8px rgba(0,0,0,0.1);
         }
         
         .btn-outline {
             background: transparent;
             border: 2px solid var(--primary);
             color: var(--primary);
+            margin-left: 15px;
         }
         
         .btn-outline:hover {
             background: var(--primary);
             color: white;
         }
-        
         .btn-container {
-            display: flex;
-            flex-wrap: wrap;
-            gap: 15px;
-            margin-top: 25px;
-        }
-        
-        .btn i {
-            margin-right: 10px;
-            font-size: 0.9em;
-        }
-        
-        .btn.cv-pdf {
-            background-color: var(--secondary);
-            border-color: var(--secondary);
-        }
-        
-        .btn.cv-pdf:hover {
-            background-color: #003366;
-            border-color: #003366;
-            color: white;
-        }
-        
-        .btn.linkedin {
-            background-color: #0077B5;
-            border-color: #0077B5;
-        }
-        
-        .btn.linkedin:hover {
-            background-color: #005582;
-            border-color: #005582;
-            color: white;
-        }
-        
-        .btn.email {
-            background-color: #8E2B23;
-            border-color: #8E2B23;
-        }
-        
-        .btn.email:hover {
-            background-color: #6D221B;
-            border-color: #6D221B;
-            color: white;
-        }
-        
+                display: flex;
+                flex-wrap: wrap;
+                gap: 10px;
+                margin-top: 20px;
+            }
+            
+            .btn i {
+                margin-right: 8px;
+            }
+            
         .notice {
             background: var(--light);
             padding: 30px;
@@ -327,112 +289,42 @@
             right: 20px;
         }
         
-       @media (max-width: 768px) {
-            /* Correcciones para móvil */
-            body {
-                font-size: 16px;
-                line-height: 1.6;
-            }
-            
+        @media (max-width: 768px) {
             .header-content {
-                padding: 20px 15px;
-                gap: 20px;
+                flex-direction: column;
+                gap: 30px;
             }
             
             .profile-text {
-                max-width: 100%;
-                padding: 0 15px;
-            }
-            
-            h1 {
-                font-size: 1.8rem;
-            }
-            
-            .container {
-                margin: 30px auto;
-                padding: 0 15px;
-                width: 100%;
-                box-sizing: border-box;
-            }
-            
-            section {
-                margin-bottom: 40px;
-            }
-            
-            h2 {
-                font-size: 1.5rem;
-                width: 100%;
-            }
-            
-            .btn {
-                min-width: 100%;
-                padding: 12px 15px;
-                font-size: 0.95rem;
-            }
-            
-            .btn-container {
-                gap: 10px;
+                text-align: center;
             }
             
             .profile-frame {
-                width: 150px;
-                height: 200px;
+                width: 180px;
+                height: 240px;
             }
             
-            nav a {
-                padding: 8px 0;
-                font-size: 0.9rem;
-                margin: 0 10px;
-            }
-            
-            /* Ajustes para la sección de copywriting */
-            .copywriting-section {
-                padding: 20px;
-                margin: 40px 0;
-            }
-            
-            .copywriting-section h2 {
-                font-size: 1.5rem;
-            }
-            
-            /* Footer ajustado */
-            footer {
-                padding: 20px 0;
-                margin-top: 50px;
-            }
-            
-            .footer-logos img {
-                width: 80px;
-                height: 80px;
-            }
-        }
-        
-        /* Añado media query para pantallas muy pequeñas */
-        @media (max-width: 480px) {
             h1 {
-                font-size: 1.5rem;
-            }
-            
-            .subtitle {
-                font-size: 1rem;
+                font-size: 2rem;
             }
             
             .nav-container {
                 flex-direction: column;
+                align-items: center;
             }
             
             nav a {
                 margin: 5px 0;
-                display: block;
-                text-align: center;
+            }
+            
+            .btn-outline {
+                margin-left: 0;
+                margin-top: 10px;
             }
             
             .language-switcher {
-                position: relative;
-                margin: 15px auto;
-                display: flex;
-                justify-content: center;
-                gap: 10px;
+                position: static;
+                margin-top: 15px;
             }
         }
     </style>
