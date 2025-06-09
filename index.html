@@ -79,13 +79,11 @@
         position: relative;
     }
 
-    profile-photo {
-        width: 100%;
-        height: 100%;
-        object-fit: cover;
-        object-position: center top;
-        transition: transform 0.3s ease;
-        border-radius: 50%; /* Asegura que la imagen sea ovalada */
+.profile-frame {
+    width: 280px;
+    height: 220px;
+    border-radius: 60% 60% 40% 40% / 50% 50% 50% 50%; /* Ovalado horizontal */
+}
     }
         profile-frame:hover .profile-photo {
             transform: scale(1.03);
