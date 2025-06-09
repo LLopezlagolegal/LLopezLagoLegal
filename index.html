@@ -211,15 +211,15 @@
         }
         
         .btn-container {
-                display: flex;
-                flex-wrap: wrap;
-                gap: 10px;
-                margin-top: 20px;
-            }
+            display: flex;
+            flex-wrap: wrap;
+            gap: 10px;
+            margin-top: 20px;
+        }
             
-            .btn i {
-                margin-right: 8px;
-            }
+        .btn i {
+            margin-right: 8px;
+        }
             
         .notice {
             background: var(--light);
@@ -309,6 +309,17 @@
             .language-switcher {
                 position: static;
                 margin-top: 15px;
+            }
+            
+            /* Nuevos estilos para centrar botones en móvil */
+            .btn-container {
+                justify-content: center;
+            }
+            
+            .btn {
+                width: 100%;
+                text-align: center;
+                margin: 5px 0;
             }
         }
     </style>
