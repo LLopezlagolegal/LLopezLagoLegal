@@ -1,9 +1,25 @@
 <!DOCTYPE html>
-<html lang="fr">
+<html lang="es">
 <head>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Lucas López Lago | Profil Juridique Professionnel</title>
+    <title>Lucas López Lago | Profil Juridique Professionel </title>
+        <link rel="icon" type="image/png" href="/https://lucaslllegal.github.io/LucasLLLegal/favicon-96x96.png" sizes="96x96" />
+        <link rel="icon" type="image/svg+xml" href="/https://lucaslllegal.github.io/LucasLLLegal/favicon.svg" />
+        <link rel="shortcut icon" href="/https://lucaslllegal.github.io/LucasLLLegal/favicon.ico" />
+        <link rel="apple-touch-icon" sizes="180x180" href="/https://lucaslllegal.github.io/LucasLLLegal/apple-touch-icon.png" />
+        <meta name="apple-mobile-web-app-title" content="LLL Legal" />
+        <link rel="manifest" href="/https://lucaslllegal.github.io/LucasLLLegal/site.webmanifest" />
+            <!-- Favicon básico (compatible con la mayoría de navegadores) -->
+        <link rel="icon" href="favicon.ico" type="image/x-icon">
+        
+        <!-- Para mayor compatibilidad (PNG/SVG) -->
+        <link rel="icon" type="image/png" href="favicon.png">
+        <link rel="icon" type="image/svg+xml" href="favicon.svg">
+        
+        <!-- Para Apple (iPhone, iPad) -->
+        <link rel="apple-touch-icon" href="apple-touch-icon.png">
     <style>
         :root {
             --primary: #00274d;
@@ -39,6 +55,18 @@
             justify-content: center;
             gap: 50px;
             flex-wrap: wrap;
+        }
+        
+        /* Mobile responsiveness */
+        @media (max-width: 768px) {
+            .logo {
+                width: 70px;
+                height: 70px;
+            }
+            .logo-container {
+                top: 15px;
+                left: 15px;
+            }
         }
         .profile-frame {
             width: 220px;
@@ -132,7 +160,7 @@
             margin-bottom: 60px;
         }
         
-                h2 {
+        h2 {
             font-size: 1.8rem;
             color: var(--primary);
             margin-bottom: 25px;
@@ -193,7 +221,17 @@
             background: var(--primary);
             color: white;
         }
-        
+        .btn-container {
+                display: flex;
+                flex-wrap: wrap;
+                gap: 10px;
+                margin-top: 20px;
+            }
+            
+            .btn i {
+                margin-right: 8px;
+            }
+            
         .notice {
             background: var(--light);
             padding: 30px;
@@ -202,6 +240,35 @@
             margin-bottom: 80px;
         }
         
+        .copywriting-link {
+            display: inline-block;
+            margin: 25px 0;
+            font-size: 1.1em;
+            color: #00274d;
+            text-decoration: none;
+            position: relative;
+            padding-left: 30px;
+        }
+        
+        .copywriting-link i {
+            position: absolute;
+            left: 0;
+            top: 50%;
+            transform: translateY(-50%);
+            color: #e8c050;
+            font-size: 1.3em;
+        }
+        
+        .copywriting-link span {
+            border-bottom: 2px solid #e8c050;
+            transition: all 0.3s ease;
+        }
+        
+        .copywriting-link:hover span {
+            color: #004080;
+            border-bottom-color: #004080;
+        }
+
         footer {
             background: var(--dark);
             color: white;
@@ -260,7 +327,7 @@
                 margin-top: 15px;
             }
         }
-    </style>
+  </style>
 </head>
 <body>
     <header>
