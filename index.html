@@ -231,6 +231,16 @@
             .btn i {
                 margin-right: 8px;
             }
+        .btn.cv-pdf {
+            background-color: var(--secondary) !important; /* Azul medio (#004080) */
+            border-color: var(--secondary) !important;
+            color: white;
+        }
+        
+        .btn.cv-pdf:hover {
+            background-color: #003366 !important; /* Un tono un poco más oscuro para hover */
+            border-color: #003366 !important;
+        }
             
         .notice {
             background: var(--light);
@@ -385,16 +395,15 @@
                 </ul>
             </div>
 
-         <div class="btn-container">
+      <div class="btn-container">
             <a href="curriculum-extendido.html" class="btn">
-                Ver currículum completo
+                <i class="fas fa-file-alt"></i> Ver currículum completo
             </a>
-            <a href="CV.pdf" download class="btn btn-outline">
-                Descargar CV en PDF
+            <a href="CV.pdf" download class="btn" style="background-color: var(--secondary); border-color: var(--secondary);">
+                <i class="fas fa-download"></i> Descargar CV PDF
             </a>
-            <!-- Añade este nuevo botón para Harvard -->
-            <a href="CV-Harvard.pdf" download class="btn btn-outline" style="margin-top: 10px;">
-                <i class="fas fa-file-alt"></i> Descargar CV Harvard
+            <a href="CV-Harvard.pdf" download class="btn btn-outline">
+                <i class="fas fa-graduation-cap"></i> CV Formato Harvard
             </a>
         </div>
             
